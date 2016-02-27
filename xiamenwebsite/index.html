@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>TravelSite Theme</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- Mobile Specific
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+
+<!-- Java Script
+================================================== -->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="js/camera.min.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/selectnav.min.js"></script>
+<!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyB3tShW1hLlV2lYW8_sCVln6TLF2bWvgU8"></script>-->
+<script type="text/javascript" src="js/jquery.googlemaps.1.01.min.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body class="home">
+<div id="slider-wrap">
+	<div class="camera_wrap" id="camera-wrap">
+		<div data-src="images/uploads/1280x800/st-basil.png">
+		
+			<div class="camera_caption moveFromBottom camera_text_center">
+				<div class="caption_slider h2">
+					King Back！！！
+				</div>
+			</div>
+			
+		</div>
+        
+		<div data-src="images/uploads/1280x800/moscow.png">
+        	
+            <div class="camera_caption fadeIn camera_text_center">
+				<div class="caption_slider h2">
+					King Back！！！
+				</div>
+			</div>
+        
+        </div>
+		<div data-src="images/uploads/1280x800/temple-kyoto.jpg">
+        
+        	<div class="camera_caption moveFromBottom camera_text_center">
+				<div class="caption_slider h2">
+					King Back！！！
+				</div>
+			</div>
+        
+        </div>
+		
+		
+	</div><!--camera-wrap -->
+</div>
+
+<div id="wrapper">
+	<div id="container">
+	
+		<!--start header -->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html"><strong>大学生去哪儿网</strong></a>   
+			</div>	
+          &nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="index.html"><strong>登录</strong></a>&nbsp; |&nbsp;
+                <a href="index.html"><strong> 注册</strong></a>   
+
+			<div id="searchbox">
+				<form action="#">
+				  <input type="text" id="search" placeholder="搜索" />
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div id="navigation">
+				<ul id="nav">
+				  <li class="selected"><a href="index.html">首 页</a></li>
+					<li><a href="browse.html">门票</a>
+						<ul>
+							<li><a href="browse-result.html">自助游</a></li>
+							<li><a href="browse-detail.html">跟团游</a></li>
+						</ul>
+					</li>
+					<li><a href="blog.html">圈子讨论</a></li>
+                    <li><a href="element.html">攻略</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+			</div>
+		</header>
+		<!--end header -->
+		
+		<!--start content -->
+		<section id="content">
+			<div class="two-third">
+            <div id="searchmodule" class="tabs">
+					<ul class="tab-control">
+					  <li><a href="#flight-search">路线查找</a></li>
+						<li><a href="#hotel-search">住宿</a></li>
+						
+					</ul>
+					<div id="flight-search" class="tab-content">
+						<form action="#">
+							<div class="field">
+							  <label for="flight-from">出发地：</label>
+							  <input type="text" id="flight-from" class="input-text"  autocomplete="off" />
+							</div>
+							<div class="field">
+							  <label for="flight-to">目的地：</label>
+							  <input type="text" id="flight-to" class="input-text"  autocomplete="off" />
+							</div>
+							<div class="field half">
+							  <label for="flight-depart">启程日：</label>
+							  <input type="text" id="flight-depart" class="input-text input-cal" placeholder="2015-05-01" autocomplete="off" />
+							</div>
+						  <div class="field half even">
+							<label for="flight-return">返程日：</label>
+							<input type="text" id="flight-return" class="input-text input-cal" placeholder="2015-06-30" autocomplete="off" />
+						  </div>
+						  <button type="submit" class="submit">搜索</button>
+							<br class="clear" />
+						</form>
+					</div>
+					<!--flight search -->
+					
+					<div id="hotel-search" class="tab-content">
+						<form action="#">
+							<div class="field">
+								<label for="hotel-to">区域：</label>
+							  <input type="text" id="hotel-to" class="input-text" autocomplete="off" />
+							</div>
+							<div class="field half">
+							  <label for="hotel-depart">入住日：</label>
+							  <input type="text" id="hotel-depart" class="input-text input-cal" placeholder="2015-05-01" autocomplete="off" />
+							</div>
+							<div class="field half even">
+							  <label for="hotel-return">退房日：</label>
+							  <input type="text" id="hotel-return" class="input-text input-cal" placeholder="2015-06-30" autocomplete="off" />
+							</div>
+						  <div class="field half"><label for="hotel-room">等级：</label>
+							  <select id="hotel-room">
+<option>普通</option>
+<option>三星级</option>
+<option>四星级</option>
+ <option>五星级</option>                                
+</select>
+						  </div>
+							<div class="field half even">
+								<label for="hotel-room">人数：</label>
+								<select id="hotel-room">
+									<option>1</option>
+<option>2</option>
+<option>>2</option>
+                                 
+</select>
+							</div>
+							<button type="submit" class="submit">搜索</button>
+							<br class="clear" />
+						</form>
+					</div>
+					<!--hotel search -->
+					
+					<div id="travel-search" class="tab-content"></div>
+					<!--travel search -->
+			  </div></div>
+			<!--searchmodule -->
+			
+			<div class="one-third last">
+				<div id="newsletter" class="module">
+					<div class="module-content">
+						<div class="module-content-wrap">
+						  <div class="h3">时事通讯</div>
+							<p>获得定期的内容更新，产品功能发布和独特的优惠信息，立刻订阅穷游邮件！</p>
+							<p>
+							  <label for="newsletter-email">您的 Email :</label>
+								<input type="text" id="newsletter-email" class="input-text" />
+						  </p>
+							<div>
+								<button type="submit">订阅</button>
+							</div>
+							
+							<br class="clear" />
+						</div>
+					</div>
+				</div>
+		  </div>
+			<!--newsletter -->
+			<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+		  <div class="hr"><hr /></div>
+		  			
+			
+			<!--newsection -->
+            <div class="section-title">
+			  <span class="h3">当季活动</span>
+				<a class="right" href="">浏览更多</a>		
+			</div>
+            <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/auckland-city.png" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">鼓浪屿</h4></div>
+					
+				</div>
+			</div>
+          <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/auckland-city.png" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">鼓浪屿</h4></div>
+					
+				</div>
+		  </div>
+          <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/auckland-city.png" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">鼓浪屿</h4></div>
+					
+				</div>
+		  </div>
+            <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/auckland-city.png" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">鼓浪屿</h4></div>
+					
+				</div>
+			</div>
+          <div class="hr"><hr /></div>
+			<div class="section-title">
+				<span class="h3">热门景区</span>
+			  <a class="right" href="">浏览更多</a>		
+			</div>
+			
+			<div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+					  <img src="images/uploads/220x135/auckland-city.png" alt="image" />
+					</div>
+				  <div class="post-content">
+				    <h4 class="post-title">鼓浪屿</h4>
+					  <p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">877 评论</span>
+						<a class="read-more" href="#">阅读更多</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/rio-de-jainero.jpg" alt="image" />
+					</div>
+				  <div class="post-content">
+				    <h4 class="post-title">方特梦幻王国</h4>
+					  <p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">688 评论</span>
+					  <a class="read-more" href="#">阅读更多</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/stupa.jpg" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">日月谷温泉渡假村</a></h4>
+						<p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+					  <span class="comment-count">550 评论</span><a class="read-more" href="#">阅读更多</a></div>
+                        
+				</div>
+			</div>
+			
+			<div class="one-fourth last">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/st-basil-2.jpg" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">观音山梦幻海岸</a></h4>
+						<p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">400 评论</span>
+					  <a class="read-more" href="#">阅读更多</a>
+					</div>
+				</div>
+			</div>
+          <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/stupa.jpg" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">世界名人蜡像馆</h4>
+						<p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">321 评论</span><a class="read-more" href="#">阅读更多</a></div>
+                        
+			</div>
+		  </div>
+          <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/stupa.jpg" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">翠丰温泉</h4>
+						<p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">202<span class="comment-count"> 评论</span><a class="read-more" href="#">阅读更多</a></div>
+                        
+		    </div>
+		  </div>
+          <div class="one-fourth">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/stupa.jpg" alt="image" />
+					</div>
+					<div class="post-content">
+						<h4 class="post-title">海上看金门</h4>
+						<p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">200 评论</span><a class="read-more" href="#">阅读更多</a></div>
+                        
+			</div>
+		  </div>
+          <div class="one-fourth last">
+				<div class="post-item">
+					<div class="image-place">
+						<img src="images/uploads/220x135/st-basil-2.jpg" alt="image" />
+					</div>
+				  <div class="post-content">
+				    <h4 class="post-title">南普陀寺</h4>
+					  <p class="post-excerpt">鼓浪屿隶属于福建省厦门市，位于厦门岛西南隅，与厦门半岛隔海相望，岛上气候宜人，四季如春，无车马喧</p>
+				  </div>
+					<div class="post-meta">
+						<span class="comment-count">188 评论</span>
+						<a class="read-more" href="#">阅读更多</a>
+					</div>
+				</div>
+		  </div>
+            <!--action-box -->
+			
+			
+			<br class="clear" />
+		</section>
+		<!--end content -->
+	
+  </div>
+	<!--container -->
+	
+	<!--start footer -->
+	<footer id="footer">
+		<div class="wrap">
+		  <div class="one-fourth">
+			<div class="theme-logo"><strong>大学生去哪网</strong></div>
+			  <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 本项目是为大学生旅游开发的一个网上浏览网站；</p>
+			  <p><a href="http://www.qyer.com/">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">大学生去哪网</a>为大学生旅行者提供原创实用市内游<a href="http://place.qyer.com/">旅行指南</a>和<a href="http://place.qyer.com/">旅游攻略</a>、<a href="http://bbs.qyer.com/">旅行社区</a>和<a href="http://ask.qyer.com/">问答</a>交流平台。          </p>
+		  </div>
+			
+			<div class="one-fourth">
+			  <h3>帮助中心</h3>
+				<ul>
+					<li><a href="#">新手上路</a></li>
+					<li><a href="#">使用帮助</a></li>
+					<li><a href="#">网站地图</a></li>
+
+				</ul>
+			</div>
+			
+<div class="one-fourth">
+			<h3>关于我们</h3>
+			  <ul>
+				  <li class="glyph-home">福建省厦门市厦门理工学院</li>
+				  <li class="glyph-briefcase">电话：1885052XXXX</li>
+				  <li class="glyph-envelope">Email ：XXX@qq.com</li>
+			  </ul>
+		  </div>
+			<div class="one-fourth last">
+				<h3>友情链接</h3>
+				<p><a href="#">去哪儿网</p>
+                <p><a href="#">携程旅游</p>
+                <p><a href="#">驴妈妈旅游网</p>
+                <p><a href="#">蚂蜂窝</p>
+				<!-- Start of Flickr Badge -->
+				<div id="flickr_badge_uber_wrapper">
+					<div id="flickr_badge_wrapper">
+					</div>
+				</div>
+				<!-- End of Flickr Badge -->
+		  </div>
+		  <div class="one-fourth last">
+
+		
+		  </div>
+			
+			<br class="clear" />
+		</div>
+		<!--footer wrap -->
+	</footer>
+	<!--end footer -->
+	
+	<section id="subfooter"></section>
+	<!--subfooter -->
+	
+</div>
+<!--wrapper -->
+
+</body>
+</html>
